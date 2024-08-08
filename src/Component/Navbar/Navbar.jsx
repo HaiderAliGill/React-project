@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link to="/user" className="nav-links" onClick={closeMenu}>User</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-links" onClick={closeMenu}>Contact</Link>
+            <Link to="/params" className="nav-links" onClick={closeMenu}>Params</Link>
           </li>
         </ul>
       </div>
