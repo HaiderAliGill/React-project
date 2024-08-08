@@ -2,8 +2,10 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
-      home
+    <div className='nav-container'>
+      <h1 className=''>
+        home
+      </h1>
     </div>
   )
 }
