@@ -5,6 +5,7 @@ import About from "./Component/About/About";
 import Navbar from "./Component/Navbar/Navbar";
 import UserList from "./Component/UserLIst/UserList";
 import Getparams from "./Component/Getparams/Getparams";
+import Fetch from "./Component/Fetch/Fetch";
 
 function App() {
   return <>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/user" element={<UserList />} />
         <Route path="/params" element={<Getparams />} />
+        <Route path="/fetch" element={<Fetch />} />
       </Routes>
     </BrowserRouter>
   </>;

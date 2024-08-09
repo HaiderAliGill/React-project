@@ -30,6 +30,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/params" className="nav-links" onClick={closeMenu}>Params</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/fetch" className="nav-links" onClick={closeMenu}>Fetch</Link>
+          </li>
         </ul>
       </div>
     </nav>
