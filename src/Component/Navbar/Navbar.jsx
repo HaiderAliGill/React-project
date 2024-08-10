@@ -33,6 +33,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/fetch" className="nav-links" onClick={closeMenu}>Fetch</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/post" className="nav-links" onClick={closeMenu}>Post</Link>
+          </li>
         </ul>
       </div>
     </nav>
