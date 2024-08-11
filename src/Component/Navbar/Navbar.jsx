@@ -36,6 +36,12 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/post" className="nav-links" onClick={closeMenu}>Post</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/update" className="nav-links" onClick={closeMenu}>Update</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/delete" className="nav-links" onClick={closeMenu}>Delete</Link>
+          </li>
         </ul>
       </div>
     </nav>
