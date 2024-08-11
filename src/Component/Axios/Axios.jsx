@@ -14,12 +14,12 @@ function Axios() {
     getapi()
       .then((response) => {
         setapi_data(response.data);
-        console.log("axios data", api_data);
+        // console.log("axios data", api_data);
       })
       .catch((error) => {
         console.log(error);
       });
-  },[api_data]);
+  }, [api_data]);
 
   // END GET REQUEST
 
