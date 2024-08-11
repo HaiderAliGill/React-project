@@ -5,7 +5,6 @@ function DeteleMethord() {
     <div className="nav-container">
         <div>
             <h1>DELETE FETCH DATA</h1>
-
         </div>
     </div>
   )

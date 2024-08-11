@@ -9,6 +9,7 @@ import Fetch from "./Component/Fetch/Fetch";
 import Postfetch from "./Component/Postfetch/Postfetch";
 import UpdateFetch from "./Component/UpdateFetch/UpdateFetch";
 import DeteleMethord from "./Component/DeleteMethod/DeteleMethord";
+import Axios from "./Component/Axios/Axios.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/post" element={<Postfetch />} />
           <Route path="/update" element={<UpdateFetch />} />
           <Route path="/delete" element={<DeteleMethord />} />
+          <Route path="/axios" element={<Axios />} />
         </Routes>
       </BrowserRouter>
     </>
