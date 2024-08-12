@@ -3,7 +3,7 @@ import axios from "axios";
 let URL = "https://jsonplaceholder.typicode.com";
 
 let createInstance = axios.create({
-  baseURL: URL,
+  baseURL : URL,
 });
 
 // GET REQUEST
@@ -18,7 +18,7 @@ export const postapi = (postdata) => {
   return createInstance.post("/posts", postdata);
 };
 
-// PUT REQUEST
+// PUT REQUEST UPDATE DATA
 
 export const putapi = (post_id, update_data) => {
   return createInstance.put(`/posts/${post_id}`, update_data);
