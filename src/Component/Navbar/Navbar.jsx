@@ -45,6 +45,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/axios" className="nav-links" onClick={closeMenu}>Axios</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/todo" className="nav-links" onClick={closeMenu}>TODOLIST</Link>
+          </li>
         </ul>
       </div>
     </nav>
