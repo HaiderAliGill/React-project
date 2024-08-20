@@ -9,9 +9,12 @@ const todoSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action) => {
+      console.log("chech the main part")
       state.todos.push(action.payload);
     },
-    deleteTodo: (state, action) => {},
+    deleteTodo: (state, action) => {
+      
+    },
     clearTodo: (state, action) => {},
   },
 });

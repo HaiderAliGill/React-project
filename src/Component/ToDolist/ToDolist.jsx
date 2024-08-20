@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import imagedelete from "../../assets/DELETE.png"
 import styled from 'styled-components';
+import { useDispatch } from "react-redux";
+import { addTodo } from "../../store/features/TodoSlice"
 
 function ToDolist() {
 
+  const dispatch = useDispatch("")
 
   const [newtodo, setnewtodo] = useState("")
 
   console.log(newtodo)
 
 
-  const handeltodo = () =>{
-    
+  const handeltodo = () => {
+    if (newtodo) {
+      dispatch(addTodo({
+        id: Date.now(),
+        text: newtodo,
+      }))
+      setnewtodo("")
+    }
   }
+
+  
 
 
   return (
@@ -26,18 +37,15 @@ function ToDolist() {
               <input type="text" placeholder="Add a new Todo" onChange={(e) => setnewtodo(e.target.value)} />
               <button>Click Add List</button>
             </Wrapper>
-
             <TodoItem>
               <div className="">TODO -1</div>
               <div className="">
                 <img src={imagedelete} alt="sdsds" width="40px" />
               </div>
             </TodoItem>
-
             <Clearbutton>
               <button onClick={handeltodo}>Clear All</button>
             </Clearbutton>
-
           </Container>
         </div>
       </div>
